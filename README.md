@@ -6,19 +6,22 @@ Work-in-progress repository. For more see [ref.x86asm.net](http://ref.x86asm.net
 
 The "introduced with processor" (XML `proc_start`) really made sense only up to some of the early Pentium processors. However, the XML reference codes until `13` (Core i7) are not going to be reconsidered because of backwards compatibility. For future, it is proposed to use Intel processor families instead:
 
-| Intel CPU Family | HTML editions code | XML reference code | Introduced | New instructions, ISA additions | Notes |
-|-------------------|------|----|------|------------------|---------------------|
-| Nehalem (Core i7) | `C7` | 13 | 2008 | SSE4.2, `POPCNT` | already implemented
-| Westmere          | `WM` | 14 | 2010 | AES-NI, `PCLMULQDQ` |
-| Sandy Bridge      | `SB` | 15 | 2011 | AVX |
-| Ivy Bridge        | `IB` | 16 | 2012 | `RDRAND`, F16C, FSGSBASE |
-| Haswell           | `HW` | 17 | 2013 | AVX2, FMA3, BMI1/BMI2, TSX |
-| Broadwell         | `BW` | 18 | 2014 | ADX (`ADCX`/`ADOX`), `RDSEED`, `PREFETCHW`, SMAP |
-| Skylake           | `SL` | 19 | 2015 | SGX, MPX, XSAVEC/XSAVES, CLFLUSHOPT, AVX-512F |
-| Cannon Lake       | `CL` | 20 | 2018 | AVX-512 IFMA, AVX-512 VBMI |
-| Ice Lake          | `IL` | 21 | 2019 | GFNI, VAES, VPCLMULQDQ, AVX-512 VNNI; other AVX-512 add-ons like VBMI2, BITALG, VPOPCNTDQ |
-| Alder Lake        | `AL` | 22 | 2021 | AVX-VNNI, new extensions/instructions like `SERIALIZE`, `HRESET`, PTWRITE, WAITPKG |
-
+| Intel CPU Family    | HTML editions code | XML reference code | Introduced | New instructions, ISA additions | Notes |
+|---------------------|------|----|------|------------------|---------------------|
+| Nehalem, Bloomfield | `C7` | 13 | 2008 | SSE4.2, `POPCNT` | already implemented
+| Westmere, Gulftown  | `WM` | 14 | 2010 | AES-NI, `PCLMULQDQ` |
+| Sandy Bridge        | `SB` | 15 | 2011 | AVX |
+| Ivy Bridge          | `IB` | 16 | 2012 | `RDRAND`, F16C, FSGSBASE |
+| Haswell             | `HW` | 17 | 2013 | AVX2, FMA3, BMI1/BMI2, TSX (HLE/RTM) |
+| Broadwell-Y         | `BW` | 18 | 2014 | ADX (`ADCX`/`ADOX`), `RDSEED`, `PREFETCHW`, SMAP |
+| Skylake             | `SL` | 19 | 2015 | SGX, MPX, XSAVEC/XSAVES, CLFLUSHOPT |
+| Kaby Lake           | `KL` | 20 | 2016 | PTWRITE |
+| Knights Landing     | `KN` | 21 | 2016 | AVX-512 (first shipping implementation) |
+| Cannon Lake         | `CL` | 22 | 2018 | AVX-512 IFMA, AVX-512 VBMI |
+| Cascade Lake-SP     | `CA` | 23 | 2019 | AVX-512 VNNI |
+| Ice Lake            | `IL` | 24 | 2019 | GFNI, VAES, VPCLMULQDQ, AVX-512 VNNI; other AVX-512 add-ons like VBMI2, BITALG, VPOPCNTDQ |
+| Tremont             | `TR` | 25 | 2020 | WAITPKG (UMONITOR/UMWAIT/TPAUSE) |
+| Alder Lake          | `AL` | 26 | 2021 | AVX-VNNI, new instructions like `SERIALIZE`, `HRESET` |
 
 ### Notes on Addressing Methods
 
