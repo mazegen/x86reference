@@ -4393,9 +4393,9 @@
 	  <mnem>FUCOMI</mnem><src nr="0" group="x87fpu">ST</src><src><a>EST</a></src>
 	</syntax>
 	<grp1>x87fpu</grp1><grp2>compar</grp2>
-	<modif_f>ozpc</modif_f>
-	<def_f>ozpc</def_f>
-	<f_vals>o</f_vals>
+	<modif_f>oszapc</modif_f>
+	<def_f>oszapc</def_f>
+	<f_vals>osa</f_vals>
 	<modif_f_fpu>1</modif_f_fpu>
 	<def_f_fpu>1</def_f_fpu>
 	<note><brief>Unordered Compare Floating Point Values and Set EFLAGS</brief></note>
@@ -4408,9 +4408,9 @@
 	  <mnem>FCOMI</mnem><src nr="0" group="x87fpu">ST</src><src><a>EST</a></src>
 	</syntax>
 	<grp1>x87fpu</grp1><grp2>compar</grp2>
-	<modif_f>ozpc</modif_f>
-	<def_f>ozpc</def_f>
-	<f_vals>o</f_vals>
+	<modif_f>oszapc</modif_f>
+	<def_f>oszapc</def_f>
+	<f_vals>osa</f_vals>
 	<modif_f_fpu>1</modif_f_fpu>
 	<def_f_fpu>1</def_f_fpu>
 	<note><brief>Compare Floating Point Values and Set EFLAGS</brief></note>
@@ -5381,9 +5381,9 @@
 	  <mnem>FUCOMIP</mnem><src nr="0" group="x87fpu">ST</src><src><a>EST</a></src>
 	</syntax>
 	<grp1>x87fpu</grp1><grp2>compar</grp2>
-	<modif_f>ozpc</modif_f>
-	<def_f>ozpc</def_f>
-	<f_vals>o</f_vals>
+	<modif_f>oszapc</modif_f>
+	<def_f>oszapc</def_f>
+	<f_vals>osa</f_vals>
 	<modif_f_fpu>1</modif_f_fpu>
 	<def_f_fpu>1</def_f_fpu>
 	<note><brief>Unordered Compare Floating Point Values and Set EFLAGS and Pop</brief></note>
@@ -5407,9 +5407,9 @@
 	  <mnem>FCOMIP</mnem><src nr="0" group="x87fpu">ST</src><src><a>EST</a></src>
 	</syntax>
 	<grp1>x87fpu</grp1><grp2>compar</grp2>
-	<modif_f>ozpc</modif_f>
-	<def_f>ozpc</def_f>
-	<f_vals>o</f_vals>
+	<modif_f>oszapc</modif_f>
+	<def_f>oszapc</def_f>
+	<f_vals>osa</f_vals>
 	<modif_f_fpu>1</modif_f_fpu>
 	<def_f_fpu>1</def_f_fpu>
 	<note><brief>Compare Floating Point Values and Set EFLAGS and Pop</brief></note>
